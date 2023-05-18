@@ -1,0 +1,158 @@
+:root {
+    --cor-pricipal: rgb(255,99,71);
+    --cor-secundaria: rgb(240,248,255);
+    --cor-contraste: rgb(59,59,59);
+    --fonte-principal: 'Montserrat', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    font-family: var(--fonte-principal);
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-pricipal);
+    width: 25vw;
+    /* margin-right: 1.5em; */
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho-imagem {
+    border-radius: 50%;
+    width: 80%;
+}
+
+.cabecalho-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho-nav-link {
+    margin-top: 1em;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+.cabecalho-nav-link:hover, .fa-brands:hover {
+    transform: scale(1.2);
+    transition-duration: 0.25s;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--cor-secundaria);
+    padding: 0 2.5em;
+    flex-grow: 1;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.dados-nome {
+    font-size: 4em;
+    color: var(--cor-pricipal);
+    border-bottom: 2px solid var(--cor-contraste);
+    margin-bottom: 1rem;
+}
+.dados-nome-primeiro {
+    color: var(--cor-contraste);
+}
+
+.dados-pessoais-titulo {
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.descricao {
+    margin-bottom: 1em;
+}
+
+.redes-links {
+    color: var(--cor-contraste);
+    margin-right: 1em;
+}
+
+.conhecimentos, .objetivos {
+    padding: 0 1.5em;
+}
+
+.fa-linkedin:hover {
+    color: #0e76a8;
+}
+
+.fa-square-github:hover {
+    color: #171515
+}
+
+.fa-square-twitter:hover{
+    color: #24a4f4
+}
+
+.fa-square-facebook:hover {
+    color: #3B5998
+}
+
+.conhecimentos {
+    list-style-type:upper-alpha;
+}
+
+.conhecimentos-item, .objetivos-item {
+    margin-bottom: 0.5em;
+}
+
+.fa-person-chalkboard, .fa-laptop-code {
+    color: var(--cor-contraste);
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .cabecalho {
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .cabecalho-imagem {
+        width: 25%;
+    }
+
+    .cabecalho-nav {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .principal{
+        justify-content: flex-start;
+    }
+
+    .dados-nome {
+        font-size: 3em;
+        margin: 0.5em 0;
+    }
+
+    .conhecimentos {
+        padding-top: 1em;
+    }
+
+    .objetivos {
+        padding-top: 1em;
+    }
+}
+.redes{
+    width: 90px;
+    height: 50px;
+}
